@@ -19,8 +19,22 @@ import ReactDOM from "react-dom/client";
 }*/
 
 function Greeting() {
-  return <h2>My First Component</h2>;
+  return (
+    <div>
+      <FirstComponent></FirstComponent>
+      <Para />
+    </div>
+  );
 }
+
+const FirstComponent = () => <h2>My First Component</h2>;
+const Para = () => {
+  return (
+    <div>
+      <p>My first para</p>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
