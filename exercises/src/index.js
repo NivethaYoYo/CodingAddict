@@ -1,20 +1,25 @@
-import react from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 /*function Greeting() {
   return (
-    <div>
-      <h1>My First Component</h1>
-    </div>
+    <>
+      <div className="someValue">
+        <h1>My First Component</h1>
+        <ul>
+          <li>
+            <a href="">Hello World Dumbos</a>
+          </li>
+        </ul>
+      </div>
+      <h2>Hello World, Hello!</h2>
+      <input type="text" name="" id="" />
+    </>
   );
 }*/
 
 function Greeting() {
-  return react.createElement(
-    "div",
-    {},
-    react.createElement("h2", {}, "My First Component")
-  );
+  return <h2>My First Component</h2>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
