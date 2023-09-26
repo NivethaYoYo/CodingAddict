@@ -1,41 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-/*function Greeting() {
+function BookList() {
   return (
-    <>
-      <div className="someValue">
-        <h1>My First Component</h1>
-        <ul>
-          <li>
-            <a href="">Hello World Dumbos</a>
-          </li>
-        </ul>
-      </div>
-      <h2>Hello World, Hello!</h2>
-      <input type="text" name="" id="" />
-    </>
-  );
-}*/
-
-function Greeting() {
-  return (
-    <div>
-      <FirstComponent></FirstComponent>
-      <Para />
-    </div>
+    <listofarticles>
+      <Book />
+      <Book />
+    </listofarticles>
   );
 }
 
-const FirstComponent = () => <h2>My First Component</h2>;
-const Para = () => {
+const Book = () => {
   return (
-    <div>
-      <p>My first para</p>
-    </div>
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
   );
 };
 
+const Image = () => (
+  <img
+    src="https://m.media-amazon.com/images/I/718aEV+GLnL._SY522_.jpg"
+    alt="Image of Yogi"
+  />
+);
+const Title = () => {
+  return <h2>Autobiography of a Yogi</h2>;
+};
+const Author = () => <h4>Paramahansa Yogananda</h4>;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Greeting />);
+root.render(<BookList />);
