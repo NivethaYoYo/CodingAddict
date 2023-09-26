@@ -25,12 +25,7 @@ const Book = () => {
   );
 };
 
-const Image = () => (
-  <img
-    src="https://m.media-amazon.com/images/I/718aEV+GLnL._SY522_.jpg"
-    alt="Image of Yogi"
-  />
-);
+const Image = () => <img src="./images/Yogi.jpg" alt="Image of Yogi" />;
 const Title = () => {
   return <h2>Autobiography of a Yogi</h2>;
 };
